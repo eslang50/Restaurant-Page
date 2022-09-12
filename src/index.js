@@ -1,8 +1,45 @@
 import './styles.css';
-import initial from './initialPage.js';
-import tabs from './tabs.js';
+import homePage from './initialPage.js';
+import menuPage from './menu.js';
+import contactPage from './contact.js';
 
-tabs();
-initial();
+const list = document.createElement('ul');
+const content = document.getElementById('content');
+
+list.classList.add('list');
+
+const home = document.createElement('li');
+home.innerHTML = 'Home';
+
+const menu = document.createElement('li');
+menu.innerHTML = 'Menu';
+
+const contact = document.createElement('li');
+contact.innerHTML = 'Contact';
+
+list.appendChild(home);
+list.appendChild(menu);
+list.appendChild(contact);
+
+content.appendChild(list);
+
+homePage();
+
+home.addEventListener('click', (e) => {
+  content.removeChild(content.lastChild);
+  homePage();
+});
+
+menu.addEventListener('click', (e) => {
+  content.removeChild(content.lastChild);
+  menuPage();
+});
+
+contact.addEventListener('click', (e) => {
+  content.removeChild(content.lastChild);
+  contactPage();
+});
+
+
 
 
