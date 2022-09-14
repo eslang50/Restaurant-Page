@@ -17,13 +17,13 @@ export default function initial() {
   const restaurantImg1 = document.createElement('div');
   const img1 = new Image();
   img1.src = restImg1;
-  img1.classList.add('restImg1');
+  img1.classList.add('homepageImg');
   restaurantImg1.appendChild(img1)
 
   const restaurantImg2 = document.createElement('div');
   const img2 = new Image();
   img2.src = restImg2;
-  img2.classList.add('restImg1');
+  img2.classList.add('homepageImg');
   restaurantImg2.appendChild(img2)
 
   imgContainer.appendChild(restaurantImg1);
@@ -42,7 +42,6 @@ export default function initial() {
   container.appendChild(description);
   container.appendChild(hours);
   container.appendChild(imgContainer);
-
 
   content.appendChild(container);
 }

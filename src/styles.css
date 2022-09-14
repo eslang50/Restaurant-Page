@@ -77,7 +77,7 @@ li:hover {
   margin-bottom: 1em;
 }
 
-.restImg1 {
+.homepageImg {
   width: 300px;
   height: fit-content;
 }
@@ -89,4 +89,36 @@ li:hover {
   flex-wrap: wrap;
 }
 
+.menuFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menuItem {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.imgFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.menuImg {
+  width: 150px;
+  height: 150px;
+}
+
+.menuHeader {
+  display: flex;
+  justify-content: center;
+}
 

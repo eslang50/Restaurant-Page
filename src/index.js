@@ -23,7 +23,11 @@ list.appendChild(contact);
 
 content.appendChild(list);
 
+// FOR TESTING 
+
 homePage();
+
+// FOR TESTING
 
 home.addEventListener('click', (e) => {
   content.removeChild(content.lastChild);
