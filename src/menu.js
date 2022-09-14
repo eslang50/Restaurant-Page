@@ -5,8 +5,9 @@ export default function menu() {
   menuHeader.innerHTML = 'Menu';
 
   const menuInfo = document.createElement('p');
+  menuInfo.innerHTML = '$10 - Enlightening Elixer';
 
-  menuInfo.innerHTML = '$10 - Enlightening Elixer'
+  
 
   const content = document.getElementById('content');
 
