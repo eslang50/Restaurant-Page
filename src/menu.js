@@ -5,8 +5,8 @@ import adoboImg from './images/adobo.jpg';
 export default function menu() {
   const container = document.createElement('div');
 
-  const menuHeader = document.createElement('h1')
-  menuHeader.classList.add('menuHeader')
+  const menuHeader = document.createElement('h1');
+  menuHeader.classList.add('header');
   menuHeader.innerHTML = 'Menu';
 
   const gridContainer = document.createElement('div');
@@ -56,8 +56,6 @@ export default function menu() {
   gridContainer.appendChild(imgContainer);
 
   container.appendChild(gridContainer);
-
-  
 
   const content = document.getElementById('content');
   content.appendChild(container);

@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url('./images/homepage.jpg');
+  background: url('./images/restaurantbackground.jpg');
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,8 +22,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-
 
 .header {
   margin: 0;
@@ -117,8 +115,47 @@ li:hover {
   height: 150px;
 }
 
-.menuHeader {
+.header {
   display: flex;
   justify-content: center;
 }
 
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+label {
+  display: block;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+textarea {
+  display: block;
+  margin: auto;
+}
+
+form {
+  margin-top: 2em;
+  border: none;
+}
+
+button {
+  display: block;
+  margin: 1em auto;
+  padding: 6px 12px;
+  border: 1px black solid;
+  background-color: black;
+  color: antiquewhite;
+  cursor: pointer;
+}
+
+button:hover {
+  color: antiquewhite;
+  opacity: .7;
+}
